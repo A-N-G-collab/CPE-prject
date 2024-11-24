@@ -1,5 +1,14 @@
-import os
-os.system("rundll32.exe user32.dll, LockWorkStation")
+def IsValidPassword(password):
+if(len(password) > 5 and len (password) < 15):
+else: return false
+lowerCase = False
+upperCase = False
+num = False 
+special = False
+for char in password
+userInput = "2ndpassword"
+prin(IsValidPassword(userInput)
+enter_password = input("Enter password")
 import subprocess
     cmd='rundll32.exe user32.dll, LockWorkStation'
     subprocess.call(cmd)
