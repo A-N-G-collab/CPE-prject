@@ -21,6 +21,7 @@ return lowerCase and upperCase and num and special
 
 else:
     return False
+
 userInput = "2ndpassword"
 prin(IsValidPassword(userInput)
 enter_password = input("Enter password")
