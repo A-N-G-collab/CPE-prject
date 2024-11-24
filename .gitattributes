@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import os
+os.system("rundll32.exe user32.dll, LockWorkStation")
