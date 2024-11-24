@@ -1,30 +1,14 @@
-def IsValidPassword(password):
-if(len(password) > 5 and len (password) < 15):
+def login() :
+    password = "admin123
+    attempts = 3
 
-else: return false
-lowerCase = False
-upperCase = False
-num = False 
-special = False
-
-for char in password
-if(char.isdigit()):
-num = True
-if(char.isdigit()):
-lowerCase = True
-if(char.isdigit()):
-upperCase = True
-if(char.isdigit()):
-special = True
-
-return lowerCase and upperCase and num and special
-
-else:
-    return False
-
-userInput = "2ndpassword"
-prin(IsValidPassword(userInput)
-enter_password = input("Enter password")
-import subprocess
+while attempts > 0:
+    if user_input = input ("Enter Password :")
+      print("Login successful!")
+      break
+    else: attempts = attempts - 1
+    print("incorrect password attempts remaining", attempts)
+   if attempts == 0:
+       import subprocess
     cmd='rundll32.exe user32.dll, LockWorkStation'
     subprocess.call(cmd)
