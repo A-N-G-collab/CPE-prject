@@ -3,11 +3,13 @@ def login() :
     attempts = 3
 
 while attempts > 0:
-    if user_input = input ("Enter Password :")
-      print("Login successful!")
-      break
-    else: attempts = attempts - 1
-    print("incorrect password attempts remaining", attempts)
+     user_input = input ("Enter Password :")
+     if user_input == password :
+        print("Login successful!")
+        break
+    else: 
+          attempts = attempts - 1
+          print("incorrect password attempts remaining", attempts)
    if attempts == 0:
        import subprocess
     cmd='rundll32.exe user32.dll, LockWorkStation'
