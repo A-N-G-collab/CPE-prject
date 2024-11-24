@@ -1,11 +1,26 @@
 def IsValidPassword(password):
 if(len(password) > 5 and len (password) < 15):
+
 else: return false
 lowerCase = False
 upperCase = False
 num = False 
 special = False
+
 for char in password
+if(char.isdigit()):
+num = True
+if(char.isdigit()):
+lowerCase = True
+if(char.isdigit()):
+upperCase = True
+if(char.isdigit()):
+special = True
+
+return lowerCase and upperCase and num and special
+
+else:
+    return False
 userInput = "2ndpassword"
 prin(IsValidPassword(userInput)
 enter_password = input("Enter password")
