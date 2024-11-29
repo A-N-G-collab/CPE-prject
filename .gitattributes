@@ -1,16 +1,15 @@
-def login() :
-    password = "admin123
-    attempts = 3
+for i in range(3) :
+    username=input("enter the ussername : ")
+    password=input("enter the password : ")
 
-while attempts > 0:
-     user_input = input ("Enter Password :")
-     if user_input == password :
-        print("Login successful!")
+    if username == 'admin' and password =='admin123' :
+        print("Access permited")
         break
-    else: 
-          attempts = attempts - 1
-          print("incorrect password attempts remaining", attempts)
-   if attempts == 0:
-       import subprocess
-    cmd='rundll32.exe user32.dll, LockWorkStation'
-    subprocess.call(cmd)
+    else:
+        print("Access denied")
+        print("Please Try agian")
+else:
+    print("no more attempts for the day")
+     
+import ctypes
+ctypes.windll.user32.LockWorkStation()
