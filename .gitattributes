@@ -9,7 +9,5 @@ for i in range(3) :
         print("Access denied")
         print("Please Try agian")
 else:
-    print("no more attempts for the day")
-     
-import ctypes
+   import ctypes
 ctypes.windll.user32.LockWorkStation()
